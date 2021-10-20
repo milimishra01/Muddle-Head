@@ -3,11 +3,17 @@
     padding: 0;
     font-family:'Poppins', sans-serif;;
 }
-html{
+html
+{
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
-.header{
+
+
+/* -----home---- */
+
+.header
+{
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
@@ -15,33 +21,39 @@ html{
     background-size: cover;
     position: relative;
 }
-nav{
+nav
+{
     display: flex;
     padding: 2% 2%;
     justify-content: space-between;
     align-items: center;
 }
-nav img{
+nav img
+{
     width: 100px;
     filter: invert(100%);
 }
-.nav-links{
+.nav-links
+{
     flex: 1;
     text-align: right;
 }
-.nav-links ul li{
+.nav-links ul li
+{
     list-style: none;
     display: inline-block;
     padding: 0.8rem 1.2rem;
     position: relative;
 }
-.nav-links ul li a{
+.nav-links ul li a
+{
     color: white;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.3rem;
 
 }
-.nav-links ul li::after{
+.nav-links ul li::after
+{
     content: "";
     width: 0;
     height: 2px;
@@ -50,7 +62,8 @@ nav img{
     margin: auto;
     transition: 0.5s;
 }
-.nav-links ul li:hover::after{
+.nav-links ul li:hover::after
+{
     width: 100%;
 }
 .text-box
@@ -66,13 +79,15 @@ nav img{
 }
 .text-box h1
 {
-    font-size: 6.2rem;
+    font-size: 5.2rem;
 }
-.text-box p{
+.text-box p
+{
     margin: 1rem 0 4rem;
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
-.btn{
+.btn
+{
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -85,42 +100,51 @@ nav img{
     transition: 1s;
 }
 
-.btn:hover{
+.btn:hover
+{
     border: 1px solid #F1CA89;
     background-color: #F1CA89;
 }
-nav .fa{
+nav .fa
+{
     display: none;
 }
+
+
 /* our spcial */
 
-.special{
+.special
+{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 10rem;
 }
-.special h1{
+.special h1
+{
     font-size: 3.6rem;
     font-weight: 600;
 
 }
 
-.special p{
+.special p
+{
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 22px;
     padding:1rem;
 }
 
-.special .row{
+.special .row
+{
     margin:5%;
     display: flex;
     justify-content: space-between;
 
 }
 
-.special .special-col{
+.special .special-col
+{
     flex-basis: 31%;
     background: #F1CA89;
     border-radius: 30px;
@@ -130,25 +154,41 @@ nav .fa{
     transition: 0.5s;
 }
 
-.special h3{
+.special h3
+{
     text-align: center;
     font-weight: 600;
     margin: 1rem 0;
+    font-size: 2.2rem;
 }
 
-.special .special-col:hover{
+.special .special-col:hover
+{
     transform: scale(0.8);
     box-shadow: 0 0 2rem 0rem rgba(0,0,0,0.6);
 }
 
+
 /* outlet */
 
-.outlets .row{
+.outlets h1
+{
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+.outlets p
+{
+    padding: 1rem;
+}
+
+.outlets .row
+{
     margin:5%;
     display: flex;
     justify-content: space-between;
 }
-.outlets{
+.outlets
+{
     width: 100%;
     margin: auto;
     text-align: center;
@@ -156,7 +196,8 @@ nav .fa{
     background-color: black;
     color: white;
 }
-.outlets-col{
+.outlets-col
+{
 
     flex-basis:32%;
     border-radius: 10px;
@@ -165,11 +206,13 @@ nav .fa{
     overflow:hidden; 
 }
 
-.outlets-col img{
+.outlets-col img
+{
     width:100%;
     display: block;
 }
-.outlets .layer{
+.outlets .layer
+{
     background:#F1CA89;
     opacity: 0.7;
     height: 100%;
@@ -177,26 +220,29 @@ nav .fa{
     position: absolute;
     top:0;
     left:0;
-    transition: 0.5s;
+    transition: 1s;
 }
 
-.outlets .layer:hover{
+.outlets .layer:hover
+{
     background: transparent;
 }
 
-.outlets .layer h3{
+.outlets .outlets-col .layer h3
+{
     width: 100%;
-    font-weight: 500;
+    font-weight: 300;
     color:black;
-    font-size: 2rem;
+    font-size: 3rem;
     bottom:0;
     left:50%;
     transform: translateX(-50%);
     position:absolute;
     opacity: 1;
-    transition: 0.5s ;
+    transition: 1s ;
 }
-.outlets .layer:hover h3{
+.outlets .layer:hover h3
+{
 bottom:49%;
 opacity:0;
 }
@@ -204,20 +250,33 @@ opacity:0;
 
 /* reviews */
 
-.reviews{
+.reviews
+{
     width: 80%;
     margin: auto;
-    padding-top: 10rem;
     text-align: center;
 
 }
 
-.reviews .row{
+.reviews h1
+{
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+
+.reviews p
+{
+    padding: 1rem;
+}
+
+.reviews .row
+{
     margin:5%;
     display: flex;
     justify-content: space-between;
 }
-.reviews-col{
+.reviews-col
+{
     flex-basis: 27%;
   
     margin-bottom: left;
@@ -235,16 +294,22 @@ opacity:0;
     border-radius: 50%; ;
 }
 .reviews-col p{
+    font-size: 1.2rem;
     padding: 0;
+    
 }
 .reviews-col h3{
     margin-top: 1.5rem;
     text-align: left;
+    font-size: 2rem;
 }
 .reviews-col .fa{
     color: #CC9B6D;
 }
+
+
 /* footer */
+
 .footer
 {
     width: 100%;
@@ -257,6 +322,7 @@ opacity:0;
     margin-bottom: 2.5rem;
     margin-top: 2rem;
     font-weight: 600;
+    font-size: 1.5rem;
 }
 .footer .fa
 {
@@ -266,24 +332,31 @@ opacity:0;
 }
 
 
-@media(max-width:700px){
-    html{
+@media(max-width:700px)
+{
+    html
+    {
         font-size: 55%;
     }
-    html,body{
+    html,body
+    {
         overflow-x:hidden;
     }
-    .text-box h1{
-        font-size: 3.3rem;
+    .text-box h1
+    {
+        font-size: 4.3rem;
     }
-    .text-box p{
+    .text-box p
+    {
         
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
-    .nav-links ul li{
+    .nav-links ul li
+    {
         display: block;
     }
-    .nav-links{
+    .nav-links
+    {
         position: absolute;
         background: #F1CA89;
         height: 100vh;
@@ -294,36 +367,35 @@ opacity:0;
         z-index: 2;
         transition: 1s;
     }
-    nav .fa{
+    nav .fa
+    {
         display: block;
         color: white;
         margin: 1rem;
         font-size: 2.2rem;
         cursor: pointer;
     }
-    .nav-links ul{
+    .nav-links ul
+    {
         padding: 3rem;
-    }
-
-    
-    .special .row{
+    } 
+    .special .row
+    {
         flex-direction: column;
     }
-    .outlets .row{
+    .outlets .row
+    {
         flex-direction: column;
     }
-    .reviews .row{
+    .reviews .row
+    {
         flex-direction: column;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
+@media(max-width:400px)
+{
+   html
+    { 
+       font-size: 45%;
+    }
+}
